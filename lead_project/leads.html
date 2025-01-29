@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#leads">Leads</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="leads">
+            <h1>Lead List</h1>
+            <div class="lead-list">
+                <!-- lead data will be populated here -->
+            </div>
+        </section>
+        <section id="lead-details" style="display: none;">
+            <h1>Lead Details</h1>
+            <div class="lead-details">
+                <!-- lead data will be populated here -->
+            </div>
+        </section>
+        <section id="lead-management" style="display: none;">
+            <h1>Lead Management</h1>
+            <form id="lead-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br><br>
+                <label for="source">Source:</label>
+                <input type="text" id="source" name="source"><br><br>
+                <label for="status">Status:</label>
+                <input type="text" id="status" name="status"><br><br>
+                <input type="submit" value="Save">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
